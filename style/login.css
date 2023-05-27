@@ -1,0 +1,110 @@
+* {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+.login-page {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("../imgs/login-bg.jpg");
+  background-size: cover;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  background-color: rgb(106 52 113 / 60%);
+  border-radius: 10px;
+  position: absolute;
+  height: fit-content;
+  z-index: 2;
+}
+.login-page img {
+  width: 500px;
+  left: 50%;
+  transform: translate(-50%);
+  top: 50px;
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.login-form form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.login-form .input {
+  color: white;
+  font-size: 20px;
+  width: 500px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(217, 1, 217, 0.744);
+  transition: 0.3s;
+}
+.login-form .input:focus {
+  outline: none;
+  border-bottom: 2px solid rgb(155, 0, 155);
+}
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.682);
+  opacity: 1;
+}
+.login-form [type="submit"] {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #9f73ab;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  transition: 0.3s;
+}
+.login-form [type="submit"]:hover {
+  background-color: #876291;
+}
+.sign-ups a {
+  text-align: center;
+  text-decoration: none;
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.674);
+  transition: 0.3s;
+}
+.sign-ups {
+  margin-bottom: -10px;
+}
+.sign-ups a:hover {
+  color: rgb(255, 255, 255);
+}
+.github {
+  font-size: 16px;
+  position: absolute;
+  color: white;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  z-index: 2;
+}
+.github a {
+  color: white;
+}
+.wrong {
+  color: red;
+  font-size: 15px;
+  width: 500px;
+}

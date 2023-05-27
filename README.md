@@ -1,7 +1,6 @@
 # GameTopia
-A website that has been created using HTML5, CSS, JavaScript, PHP
-
 Online gaming store using PHP and AJAX
+
 First large scale project using HTML, CSS, Javascript, and PHP.
 
 An online gaming store with multiple products classified by brands and categories to help in user experience. The website allows the user to register into a new account, login with an existing account, buy products, view his cart, view his purchase history, and finally add products to a wishlist.

@@ -1,0 +1,197 @@
+* {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+#breaker {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(217, 1, 217, 0.744);
+}
+body {
+  color: white;
+  background-image: url("../imgs/admin.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(39, 39, 39);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(84, 84, 84);
+  border-radius: 5px;
+}
+.container {
+  padding-top: 100px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+/* START NAVBAR */
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 0 20px 0 20px;
+  color: white;
+  background-color: rgb(150 79 159);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.733);
+  z-index: 100;
+}
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.links li {
+  list-style: none;
+}
+.links li a {
+  padding: 15px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.links #acc-click {
+  padding: 15px;
+  transition: 0.3s;
+}
+.links li a:hover,
+.links #acc-click:hover {
+  background-color: #b9e0ff;
+  color: blueviolet;
+}
+.clicked {
+  background-color: #b9e0ff;
+  color: blueviolet;
+}
+#acc-click {
+  cursor: pointer;
+}
+.accs {
+  position: relative;
+}
+#acc-lists {
+  box-shadow: -2px -2px 5px rgb(0 0 0 / 30%);
+  display: none;
+  position: absolute;
+  top: 45px;
+  right: -3.5px;
+  background-color: rgb(239, 239, 239);
+}
+#acc-lists li {
+  min-width: fit-content;
+}
+#acc-lists li a {
+  color: rgb(110, 110, 110);
+  text-align: center;
+  display: block;
+  padding: 15px 20px 15px 20px;
+  transition: 0.3s;
+}
+#acc-lists li a:hover {
+  color: white;
+  background-color: rgb(41, 41, 41);
+}
+/* END NAV */
+/* START WISHLIST */
+h1 {
+  text-align: center;
+  padding-top: 100px;
+}
+/* START PRODUCTS SECTION */
+.container .prod-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(275px, auto));
+  gap: 50px;
+  justify-content: center;
+}
+.container .prod-cards .card {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  width: 250px;
+  height: 500px;
+  background-color: #241f3a;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.container .prod-cards .card:hover {
+  box-shadow: 0 2px 4px rgba(122, 19, 124, 0.484);
+}
+.container .prod-cards .card .up-img {
+  position: relative;
+  height: 200px;
+  background-color: #4a0e52;
+  border-radius: 20px 20px 0px 0px;
+}
+.container .prod-cards .card .up-img img {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 200px;
+  transition: 0.3s;
+}
+.container .prod-cards .card .content-text {
+  text-align: left;
+  padding: 20px;
+}
+.container .prod-cards .card .content-text h2 {
+  margin-bottom: 15px;
+}
+.container .prod-cards .card .content-text .desc {
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+.container .prod-cards .card .content-text .price {
+  margin-bottom: 15px;
+}
+.container .prod-cards .card .content-text a {
+  cursor: pointer;
+  background-color: transparent;
+  width: fit-content;
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  color: #cb00d6;
+  border: 1px solid #cb00d6;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+.container .prod-cards .card .content-text a:hover {
+  color: white;
+  background-color: #cb00d6;
+}
+.container .prod-cards .card .wish {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #cb00d6;
+}
+/* END PRODUCTS SECTION */
+#prod-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#prod-links a {
+  font-size: 14px;
+}
+
+/* END WISHLIST */
